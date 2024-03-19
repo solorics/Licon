@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Licon</title>
+    <link rel="stylesheet" href="./public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="grid grid-cols-12 grid-rows-12 max-h-screen h-screen gap-4 gap-x-6 bg-[#7ba5f3]"
+    >
+      <!-- main header -->
+      <div
+        class="col-span-12 flex justify-between items-center text-xl px-6 bg-[#000435] text-white"
+      >
+        <h1>ICG FrontRail 2020 <span class="ml-7">SBG</span></h1>
+        <h1>13:29:49</h1>
+      </div>
+      <!-- second header left -->
+      <div class="col-span-4 flex items-center pl-6 row-span-2">
+        <section class="space-y-3 w-full">
+          <!-- Input_Search section -->
+          <div class="flex items-center gap-6">
+            <input type="text" class="px-6 shadow-md rounded-sm" />
+            <span><i class="fa-regular fa-calendar-days"></i></span>
+            <span
+              ><i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i
+            ></span>
+            <input type="text" class="w-12 h-6 text-center rounded shadow-md" />
+            <span class="text-slate-300 border-none">RATE</span>
+          </div>
+
+          <!--first Button Section-->
+          <div class="flex gap-3 font-semibold">
+            <button
+              type="button"
+              class="bg-[#000435] py-2 text-white shadow hover:bg-iconColor hover:text-black font-semibold ease-in-out duration-300 opacity-70 px-12 text-center rounded transform transition-transform"
+            >
+              Del
+            </button>
+            <button
+              type="button"
+              class="bg-[#000435] py-2 text-white rounded shadow hover:bg-iconColor h ease-in-out duration-300 opacity-70 px-9 text-center"
+            >
+              Print
+            </button>
+            <button
+              type="submit"
+              class="bg-[#000435] py-2 text-white px-4 text-center rounded hover:text-white hover:bg-[#4ca3cc] shadow transition-all ease-out duration-300 opacity-70"
+            >
+              Fixed Items
+            </button>
+          </div>
+
+          <div class="flex-grow">
+            <input
+              type="text"
+              placeholder="Fixed Items: 1 - FAVOURITES"
+              class="w-full p-3 py-2 font-semibold"
+            />
+          </div>
+        </section>
+      </div>
+      <!-- second header right  -->
+      <div class="col-span-8 row-span-2 pr-6 flex items-center">
+        <div class="space-y-3 w-full">
+          <div class="flex items-center font-semibold gap-2">
+            <label for="" class="">CLIENT:</label>
+            <input
+              type="text"
+              placeholder="Generic Clients"
+              class="flex-grow px-4 py-1 rounded shadow"
+            />
+          </div>
+          <div class="flex items-center font-semibold gap-2">
+            <label for="" class="">SELLER:</label>
+            <input
+              type="text"
+              placeholder="ADEYEMI O OLOLASHADE"
+              class="flex-grow px-4 py-1 rounded shadow"
+            />
+          </div>
+          <div class="grid grid-cols-6 gap-2">
+            <button
+              class="px-4 py-2 bg-btnColor text-white text-xs 2xl:text-sm rounded shadow hover:bg-iconColor hover:text-black font-semibold transition-all ease-in-out duration-300 opacity-70"
+            >
+              Advanced Payment
+            </button>
+            <button
+              class="px-4 bg-btnColor text-white text-xs 2xl:text-sm rounded shadow hover:bg-iconColor hover:text-black font-semibold transition-all ease-in-out duration-300 opacity-70"
+            >
+              Advanced Payment
+            </button>
+            <button
+              class="px-4 bg-btnColor text-white text-xs 2xl:text-sm rounded shadow hover:bg-iconColor hover:text-black font-semibold transition-all ease-in-out duration-300 opacity-70"
+            >
+              Advanced Payment
+            </button>
+            <button
+              class="px-4 bg-btnColor text-white text-xs 2xl:text-sm rounded shadow hover:bg-iconColor hover:text-black font-semibold transition-all ease-in-out duration-300 opacity-70"
+            >
+              Advanced Payment
+            </button>
+            <button
+              class="px-4 bg-btnColor text-white text-xs 2xl:text-sm rounded shadow hover:bg-iconColor hover:text-black font-semibold transition-all ease-in-out duration-300 opacity-70"
+            >
+              Advanced Payment
+            </button>
+            <button
+              class="px-4 bg-btnColor text-white text-xs 2xl:text-sm rounded shadow hover:bg-iconColor hover:text-black font-semibold transition-all ease-in-out duration-300 opacity-70"
+            >
+              Advanced Payment
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- item list  -->
+      <div class="col-span-5 row-span-5 pl-6">
+        <div
+          class="grid grid-cols-6 grid-rows-4 gap-1 w-full text-xs font-medium text-white leading-tight h-full"
+        >
+          <button class="bg-btnColor items-style">JENDOL LOAF BREAD</button>
+          <div class="bg-btnColor text-white items-style">JENDOL WHEAT BREAD</div>
+          <div class="bg-btnColor text-white items-style">JENDOL COCONUT BREAD</div>
+          <div class="bg-btnColor text-white items-style">JENDOL BURGER BREAD</div>
+          <div class="bg-btnColor text-white items-style">JENDOL CHOCOLATE BREAD</div>
+          <div class="bg-btnColor text-white items-style">JENDOL SANDINE BREAD</div>
+          <div class="bg-btnColor text-white items-style">JENDOL MILK BREAD</div>
+          <div class="bg-btnColor text-white items-style">JENDOL FRUIT BREAD</div>
+          <div class="bg-btnColor text-white items-style">MEAT PIE</div>
+          <div class="bg-btnColor text-white items-style">C-WAY BOTTLE WATER 100L</div>
+          <div class="bg-btnColor text-white items-style">JENDOL HOT DOG</div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+          <div class="bg-btnColor text-white items-style"></div>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="col-span-7 row-span-5 pr-6 overflow-auto h-full">
+        <table class="w-full min-w-max h-full overflow-auto bg-white">
+          <thead class="bg-btnColor text-white font-semibold sticky top-0">
+            <tr class="text-left">
+              <th class="px-4 py-1">Reference</th>
+              <th class="px-4 py-1">Description</th>
+              <th class="px-4 py-1">Qty</th>
+              <th class="px-4 py-1">Price+Tax</th>
+              <th class="px-4 py-1">Dist</th>
+              <th class="px-4 py-1">Amount+Fat</th>
+              <th class="px-4 py-1">Unit</th>
+            </tr>
+          </thead>
+          <tbody class="bg-[#9fbddb]">
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+            <tr class="">
+              <td class="px-4 py-1">Reference</td>
+              <td class="px-4 py-1">Description</td>
+              <td class="px-4 py-1">Qty</td>
+              <td class="px-4 py-1">Price+Tax</td>
+              <td class="px-4 py-1">Dist</td>
+              <td class="px-4 py-1">Amount+Fat</td>
+              <td class="px-4 py-1">Unit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-span-4 row-span-4 pl-6 pb-4">
+        <div
+          class="grid grid-cols-4 grid-rows-5 gap-1 cursor-pointer flex-none h-full"
+        >
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-btnColor hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            BS
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            /
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            *
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            -
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            7
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            8
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            9
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold row-span-2"
+          >
+            +
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            4
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            5
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            6
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            1
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            2
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            3
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold row-span-2"
+          >
+            Enter
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-2"
+          >
+            0
+          </div>
+          <div
+            class="bg-btnColor rounded shadow-lg text-white text-xl flex items-center justify-center hover:bg-[#000435] hover:opacity-80 hover:text-white duration-300 ease-in-out transistion-all font-semibold col-span-1"
+          >
+            .
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-8 row-span-4">
+        <div class="flex-grow">
+          <div
+            class="grid grid-cols-7 w-full bg-iconColor rounde-md shadow-lg h-44 py-2 space-y-4 fa-2x text-slate-600 cursor-pointer"
+          >
+            <div class="flex flex-col items-center justify-center mt-4 over:text-black font-semibold transition-all hover:text-white duration-300">
+              <i class="fa-solid fa-tablet-screen-button"></i>
+              <p class="text-sm ">Services</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-solid fa-receipt"></i>
+              <p class="text-sm ">Reciepts</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-solid fa-laptop"></i>
+              <p class="text-sm ">Ext</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-regular fa-clock"></i>
+              <p class="text-sm ">Wat</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-solid fa-user-xmark"></i>
+              <p class="text-sm ">Delete Line</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-solid fa-cloud"></i>
+              <p class="text-sm ">Sale on hold</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-solid fa-layer-group"></i>
+              <p class="text-sm ">Stock</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-regular fa-credit-card"></i>
+              <p class="text-sm ">Card</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-regular fa-message"></i>
+              <p class="text-sm ">Messages</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-solid fa-user-tie"></i>
+              <p class="text-sm ">Intervention</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-solid fa-store"></i>
+              <p class="text-sm ">Restore Sale</p>
+            </div>
+            <div class="flex flex-col items-center justify-center transition-all hover:text-white duration-300">
+              <i class="fa-solid fa-calculator"></i>
+              <p class="text-sm ">Calculator</p>
+            </div>
+          </div>
+          <div class="flex py-2 gap-4">
+            <div class="bg-iconColor rounde-md shadow-lg gap-2 flex flex-col text-lg p-2">
+              <div class="flex justify-between">
+                <p class="text-slate-700">Connected</p>
+                <span><i class="fa-solid fa-signal text-white"></i></span>
+              </div>
+              <p class="text-slate-700">Transactions in queue<span class=""><input type="text" class="w-16 rounded ml-4 text-right placeholder:text-black text-black pr-2" placeholder="0"></span></p>
+            </div>
+            <div class="flex gap-2">
+              <div class="flex flex-col justify-center space-y-2 text-xl">
+                <label for="" class="block text-slate-600">SUBTOTAL</label>
+                <input type="text" placeholder="3,510.00" class="text-right py-2 pr-2 bg-midnightBlue placeholder:text-white rounded">
+              </div>
+              <div class="flex flex-col justify-center space-y-2 text-xl">
+                <label for="" class="block text-slate-600">DISCOUNT</label>
+                <input type="text" placeholder="0.00" class="text-right py-2 pr-2 bg-midnightBlue placeholder:text-white rounded">
+              </div>
+              <div class="flex flex-col justify-center space-y-2 text-xl">
+                <label for="" class="block text-slate-600">NET TOTAL</label>
+                <input type="text" placeholder="=N= 3,510.00" class="text-right py-2 pr-2 bg-midnightBlue placeholder:text-amber-400 rounded">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
